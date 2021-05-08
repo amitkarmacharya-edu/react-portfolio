@@ -8,18 +8,20 @@ function Header() {
     let t = e.target;
     const ele = t.classList.contains('menu-btn-burger-icon') ? 
                 t.closest('.menu-btn') : t;
-
+    const navBar = document.querySelector('header');
     const isOpen = ele.classList.contains('menu-btn-open');
     
     if(isOpen) {
       ele.classList.remove('menu-btn-open');
+      navBar.classList.remove('show-mobile-nav-bar');
     } else {
       ele.classList.add('menu-btn-open');
+      navBar.classList.add('show-mobile-nav-bar')
     }
   }
 
   return (
-    <header>
+    <header className="header">
       <nav className="nav-bar">
         <ul className="mobile-nav-bar">
           <li className="nav-link-item">
