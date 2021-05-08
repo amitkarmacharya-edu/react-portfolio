@@ -1,0 +1,89 @@
+
+.web-author-info {
+  height: calc(100vh - 60px);
+
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  box-sizing: border-box;
+
+  z-index: 9;
+}
+
+.display-block {
+  display: block;
+}
+
+.web-author-info {
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+
+.web-author-name {
+  margin-top: 2rem;
+
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.web-author-title {
+  
+
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: capitalize;
+
+  letter-spacing: .25rem;
+}
+
+.web-info-tiny {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: .25rem;
+}
+
+.web-dev-info {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+
+  font-weight: 200;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+
+  letter-spacing: .5rem;
+}
+
+.techstack-text {
+  box-sizing: border-box;
+}
+
+.techstack-text div {
+  margin-bottom: 2.5rem;
+}
+
+.techstack-text h5 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: small;
+  letter-spacing: .1rem;
+}
+
+.techstack-text p {
+  font-weight: 300;
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  color: rgb(112, 112, 112);
+  letter-spacing: .1rem;
+}
+
+.arrow-link {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black !important;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+}
