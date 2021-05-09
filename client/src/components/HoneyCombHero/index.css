@@ -31,13 +31,19 @@
 }
 
 .web-author-title {
-  
-
+  margin-top: -3rem;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
+  letter-spacing: .5rem;
+}
 
-  letter-spacing: .25rem;
+.web-dev-head {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .web-info-tiny {
@@ -51,14 +57,18 @@
   margin-bottom: .5rem;
 
   font-weight: 200;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   text-transform: capitalize;
 
   letter-spacing: .5rem;
 }
 
 .techstack-text {
-  box-sizing: border-box;
+  height: 80vh;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .techstack-text div {
@@ -81,9 +91,76 @@
   letter-spacing: .1rem;
 }
 
+.arrow-link-container {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 .arrow-link {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black !important;
   font-weight: 400;
   border-bottom: 1px solid black;
+}
+
+@media (min-width: 576px) {
+
+  .landing-page-container {
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .web-author-info {
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .web-author-name {
+    margin-top: 4rem;
+    font-size: 1.4rem;
+  }
+
+  .web-author-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .web-dev-head { 
+    height: auto;
+  }
+
+  .web-dev-info {
+    width: 90%;
+    font-size:  1.5rem;
+  }
+
+  .web-info-tiny {
+    letter-spacing: 0.1rem;
+  }
+
+  .techstack-text {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .techstack-head, .techstack-text p {
+    margin: 1rem;
+  }
+
+  .techstack-text div {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .arrow-link-container {
+    margin-bottom: 0;
+  }
 }

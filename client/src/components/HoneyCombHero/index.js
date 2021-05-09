@@ -15,16 +15,18 @@ function HoneyCombHero() {
   }, [])
 
   return (
-    <section className="d-flex-column">
-      <div className="col web-author-info">
-        <h1 className="col web-author-name">amit karmacharya</h1>
+    <section className="landing-page-container">
+      <div className="web-author-info">
+        <h1 className="web-author-name">amit karmacharya</h1>
         <h3 className="web-author-title">full stack web developer</h3>
-        <span className="display-block web-info-tiny">familiar with</span>
-        <span className="display-block web-dev-info">development principles, technologies &amp; tools</span>
-        <span className="display-block web-info-tiny">such as</span>
-      </div>
+        <div className="web-dev-head">
+          <span className="display-block web-info-tiny">familiar with</span>
+          <span className="display-block web-dev-info">development principles, technologies &amp; tools</span>
+          <span className="display-block web-info-tiny">such as</span>
+        </div>
+    </div>
       { techStack.length > 0 ? (
-          <div className="col honeycomb-container" data-testid="honeycomb-container">
+          <div className="honeycomb-container" data-testid="honeycomb-container">
             <div className="honeycomb-techstack">
               {}
             </div>
@@ -36,7 +38,7 @@ function HoneyCombHero() {
             </div>
           </div> )
           : (
-            <div className="col techstack-text" data-testid="techstack-text">
+            <div className="techstack-text" data-testid="techstack-text">
               <div className="front-end">
                 <h5 className="techstack-head">Front-End </h5>
                 <p>html5, css3, javascript, bootstrap, materialize, react</p>
@@ -56,7 +58,7 @@ function HoneyCombHero() {
             </div>
           )
       }
-      <div className="col">
+      <div className="arrow-link-container">
         <a href="#aboutme" className="arrow-link">About Me</a>
       </div>
     </section>
