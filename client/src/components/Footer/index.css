@@ -1,0 +1,68 @@
+footer {
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section {
+  padding: 1rem;
+}
+
+footer section h5 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  margin-bottom: .5rem;
+}
+
+footer section h5 span {
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+footer section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-transform: capitalize;
+}
+
+footer section li {
+  padding: .15rem;
+}
+
+footer section li a {
+  color: rgb(39, 39, 39) !important;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-contacts ul {
+  text-transform: capitalize !important;
+}
+
+.footer-contacts ul li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contacts ul li img {
+  height: 16px;
+  margin-right: 8px;
+}
+
+.footer-contacts a {
+  font-family: inherit;
+  text-transform: none;
+  font-weight: 300;
+}
+
+.footer-contacts a:hover {
+  padding: 0;
+  margin: 0;
+}

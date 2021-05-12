@@ -1,62 +1,55 @@
-import React from 'react';
+import React from "react";
+import "./index.css";
 
 function AboutMe() {
   return (
-    <article>
+    <article className="aboutme">
       {/* page title */}
       <h1 data-testid="page-title">About Me</h1>
       {/* avatar info */}
-      <div>
-        <div>
-          <img alt="web developer, amit karmacharya" src="/assets/images/author-avatar.jpg"/>
+      <div className="web-author-info-container">
+        <div className="avatar-wrapper">
+          <div className="avatar-container">
+            <img
+              className="web-author-avatar"
+              alt="web developer, amit karmacharya"
+              src="./amit.jpg"
+            />
+          </div>
         </div>
-        <h5>Amit karmacharya</h5>
-        <div>
-          <span>amitkarmacharya.work@gmail.com</span>
-          <span><img alt="clipboard icon" src="/assets/images/clipboard-icon.png" /></span>
-        </div>
-        <span>Baltimore, Maryland</span>
+        <h5 className="web-author-name">Amit karmacharya</h5>
       </div>
+       {/* social media & resume */}
+       <section className="social-media-wrapper">
+        <div className="social-media">
+          <div className="social-media-item resume">
+            <a href="/" alt="author resume link">
+              view resume
+            </a>
+            <img alt="download author resume" src="./assets/images/download.png"/>
+          </div>
+          <div className="social-media-item">
+            <a href="./assets/images/github-logo.png" alt="author github page">
+              <img alt="download author resume" src="./assets/images/github-logo.png"/>
+            </a>
+            
+          </div>
+          <div className="social-media-item">
+            <a href="./assets/images/linkedin.png" alt="author linkedin page">
+              <img alt="download author resume" src="./assets/images/linkedin.png"/>
+            </a>
+            
+          </div>
+        </div>
+      </section>
       {/* avatar introduction */}
-      <div data-testid="author-introduction">
-        <h5>Hello!</h5>
+      <div className="author-bio" data-testid="author-introduction">
+        <h5>Hi!</h5>
         <p>
-          I am a Full-Stack Web developer based in Baltimore, Maryland. Recently graduated with a certification in Full-stack Web development (MERN Stack) from John Hopkins University, with newly developed skills in both the Front-end and Back-end technologies such as Javascript, CSS3, HTML5, Git, mobile-first design, Node.js, Express, MongoDB, Mysql, etc.
+        I am a Full-stack developer based in Baltimore, Maryland. Before becoming a developer, I was in the retail industry but always thought about transitioning into tech. I started with online learning platforms like
+Team treehouse (almost 20k points), Coursera, etc. Then, I joined a full-stack Bootcamp from John Hopkins University, which was a good learning experience. I am thrilled that I took steps to start a career I excel in and love.
         </p>
       </div>
-
-      <p data-testid="bruce-lee-quote">
-        <q>
-          Adapt what is useful, reject what is useless, and add what is specifically your own.
-        </q>
-        <span>- Bruce Lee</span>
-      </p>
-
-      {/* social links */}
-      <div>
-        {/* Resume a */}
-        <div>
-          <a to="/assets/resume.pdf" target="_blank">Resume</a>
-          <span>
-            <img alt="link icon" src="/assets/images/link-tag-icon.png"/>
-          </span>
-        </div>
-        {/* github link */}
-        <div>
-          <a href="https://github.com/amitkarmacharya-edu" target="_blank">Github</a>
-          <span>
-            <img alt="github icon" src="/assets/images/github-icon.png"/>
-          </span>
-        </div>
-      {/* linkedIn link */}
-        <div>
-          <a to="https://www.linkedin.com/in/amit-karmacharya-b344731ab/" target="_blank">LinkedIn</a>
-          <span>
-            <img alt="linkedIn icon" src="/assets/images/linkedIn-icon.png"/>
-          </span>
-        </div>
-      </div>
-
     </article>
   );
 }
