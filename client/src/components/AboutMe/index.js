@@ -19,26 +19,52 @@ function AboutMe() {
         </div>
         <h5 className="web-author-name">Amit karmacharya</h5>
       </div>
-       {/* social media & resume */}
-       <section className="social-media-wrapper">
+      {/* social media & resume */}
+      <section className="social-media-wrapper">
         <div className="social-media">
           <div className="social-media-item resume">
-            <a href="/" alt="author resume link">
+            <a
+              href="./assets/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              alt="author resume link"
+            >
               view resume
             </a>
-            <img alt="download author resume" src="./assets/images/download.png"/>
+            <a href="./assets/resume.pdf" download>
+              <img
+                alt="download author resume"
+                src="./assets/images/download.png"
+              />
+            </a>
           </div>
           <div className="social-media-item">
-            <a href="./assets/images/github-logo.png" alt="author github page">
-              <img alt="download author resume" src="./assets/images/github-logo.png"/>
+            <a
+              href="https://github.com/amitkarmacharya-edu"
+              target="_blank"
+              rel="noreferrer"
+              alt="author github page"
+            >
+              <img
+                alt="download author resume"
+                src="./assets/images/github-logo.png"
+              />
+              <span>@amitkarmacharya-edu</span>
             </a>
-            
           </div>
           <div className="social-media-item">
-            <a href="./assets/images/linkedin.png" alt="author linkedin page">
-              <img alt="download author resume" src="./assets/images/linkedin.png"/>
+            <a
+              href="https://www.linkedin.com/in/amit-karmacharya-b344731ab/"
+              target="_blank"
+              rel="noreferrer"
+              alt="author linkedin page"
+            >
+              <img
+                alt="download author resume"
+                src="./assets/images/linkedin.png"
+              />
+              <span>@amit-karmacharya-b344731ab</span>
             </a>
-            
           </div>
         </div>
       </section>
@@ -46,8 +72,13 @@ function AboutMe() {
       <div className="author-bio" data-testid="author-introduction">
         <h5>Hi!</h5>
         <p>
-        I am a Full-stack developer based in Baltimore, Maryland. Before becoming a developer, I was in the retail industry but always thought about transitioning into tech. I started with online learning platforms like
-Team treehouse (almost 20k points), Coursera, etc. Then, I joined a full-stack Bootcamp from John Hopkins University, which was a good learning experience. I am thrilled that I took steps to start a career I excel in and love.
+          I am a Full-stack developer based in Baltimore, Maryland. Before
+          becoming a developer, I was in the retail industry but always thought
+          about transitioning into tech. I started with online learning
+          platforms like Team treehouse (almost 20k points), Coursera, etc.
+          Then, I joined a full-stack Bootcamp from John Hopkins University,
+          which was a good learning experience. I am thrilled that I took steps
+          to start a career I excel in and love.
         </p>
       </div>
     </article>

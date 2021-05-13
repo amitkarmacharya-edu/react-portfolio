@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Clipboard from "../Clipboard";
+import { scrollable } from "../../utils/scrollintoview";
 import "./index.css";
 
 function Contacts() {
+  
+  const contactsRef = useRef();
+  useEffect(() => {
+    scrollable(contactsRef)
+  }, [])
+
   return (
-    <section className="contacts">
+    <section ref={contactsRef} className="contacts">
       <h1>Contacts</h1>
       {/* social links */}
       <div className="contacts-content">

@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { createRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 import Home from '../pages/Home';
 import Footer from './Footer';
@@ -10,7 +10,7 @@ function App() {
         <Router>
             <Header />
             <Home />
-            <Footer/>
+            <Footer />
         </Router>
     );
 }

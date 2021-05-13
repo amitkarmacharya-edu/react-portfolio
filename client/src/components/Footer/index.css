@@ -4,12 +4,13 @@ footer {
   width: 100%;
   padding: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 footer section {
-  padding: 1rem;
+  padding: .5rem;
+  margin-bottom: 2rem;
 }
 
 footer section h5 {
@@ -51,18 +52,38 @@ footer section li a {
   align-items: center;
 }
 
-.footer-contacts ul li img {
+footer ul li img {
+  width: 16px;
   height: 16px;
   margin-right: 8px;
 }
 
-.footer-contacts a {
+footer ul li a {
   font-family: inherit;
   text-transform: none;
   font-weight: 300;
 }
 
-.footer-contacts a:hover {
+footer ul li a:hover {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+
+.footer-links ul {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-links li a {
+  text-transform: capitalize;
+}
+
+footer h5:last-child {
+  font-size: 11px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 0; 
+  text-align: center;
 }

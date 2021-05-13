@@ -11,46 +11,6 @@
   margin-bottom: 3rem;
 }
 
-.social-media-wrapper {
-  width: 100%;
-}
-
-.author-bio p {
-  text-align: justify;
-}
-
-.social-media {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.social-media a {
-  color: black;
-}
-
-.social-media-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-media .resume a {
-  border-bottom: 1px solid blue;;
-}
-
-.social-media .resume img {
-  width: 10px;
-}
-
-.social-media-item img {
-  width:25px;
-  border: 1px solid #ddd;
-  padding: 4px;
-  border-radius: .3rem;
-  margin-left: .5rem;
-}
-
 .web-author-info-container {
   text-align: center;
 }
@@ -83,6 +43,56 @@
   margin-top: -3rem;
 }
 
+.social-media-wrapper {
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media-item a span {
+  display: none;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media .resume a {
+  border-bottom: 1px solid blue;;
+}
+
+.social-media .resume a[download] {
+  border-bottom: none;
+}
+
+.social-media .resume img {
+  width: 10px;
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+.social-media-item img {
+  width: 30px;
+  padding: 10px;
+  margin-left: .5rem;
+}
+
+.social-media-item a:hover {
+  padding: 0;
+  border-bottom: 0;
+  transform: scale(1.1);
+}
+
+.author-bio p {
+  text-align: justify;
+}
+
 .web-author-info-container .web-author-name {
   font-size: 1rem;
   margin: 1rem 0;
@@ -94,4 +104,58 @@
   font-weight: 300;
   font-family: 'Roboto';
   border-bottom: 1px solid black;
+}
+
+/** for nav link **/
+@media(min-width: 576px){
+  .aboutme {
+    height: 50vh;
+    flex-flow: row wrap;
+    align-items: center;
+    overflow: start;
+  }
+
+  .aboutme h1 {
+    text-align: center;
+    width: 100%;
+    flex-basis: content;
+    order: 1;
+  }
+
+  .web-author-info-container {
+    flex-basis: auto;
+    order: 2;
+  }
+
+  .social-media-wrapper {
+    order: 3;
+    margin-top: 1rem;
+  }
+  
+  .social-media {
+    justify-content: space-around;
+  }
+
+  .social-media-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .author-bio {
+    margin-top: 2rem;
+    flex-basis: auto;
+    order: 2;
+    width: 50%;
+    border-left: 1px solid rgb(212, 212, 212);
+    padding-left: 2rem;
+  }
+}
+
+@media(min-width: 650px) {
+  .social-media-item a span {
+    display: inline;
+    visibility: visible;
+    font-size: 14px;
+  }
 }

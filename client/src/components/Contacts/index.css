@@ -34,7 +34,7 @@
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 1px solid black;
+  border: 1px solid rgb(192, 192, 192);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,13 +45,17 @@
   background-color: whitesmoke
 }
 
+.contacts-card .card-icon img {
+  opacity: .6;
+}
+
 .contacts-card .card-head {
   font-weight: bold;
-  color: rgb(56, 56, 56);
+  color: rgb(97, 97, 97);
   text-transform: uppercase;
   font-size: 1rem;
   display: block;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,4 +96,81 @@
 .copy-fail {
   transform: scale(1.1);
   border-color: red;
+}
+
+@media(max-width: 320px) {
+  .author-email {
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 576px) {
+  .contacts-card .card-icon {
+    padding: 1rem;
+  }
+
+  .contacts-card .card-head {
+    margin-bottom: 2rem;
+  }
+}
+
+@media(min-width: 768px){
+  .contacts {
+    height: 50vh;
+    margin-bottom: none;
+  }
+
+  .contacts-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contacts-card {
+    position: relative;
+    width: 33%;
+  }
+
+  .contacts-card:before {
+    content: "";
+    height: 50%;
+    position: absolute;
+    width: 1px;
+    top: 10%;
+    left: 0;
+    background-color: rgb(223, 223, 223);
+  }
+
+  .contacts-card:first-child::before {
+    display: none;
+  }
+
+  .contacts-card .card-head {
+    margin-bottom: 3rem;
+  }
+
+  .contacts-card .card-body img {
+    width: 14px;
+    padding: 4px 4px;
+  }
+
+  .author-email {
+    font-size: 13px;
+  }
+
+  .contacts-card:last-child {
+    border-right: none;
+  }
+  
+}
+
+/* (desktops, 1400px and up) */
+@media (min-width: 999.8px) {
+  .author-email{
+    font-size: 16px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
 }
