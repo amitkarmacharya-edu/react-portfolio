@@ -12,7 +12,7 @@ function Contacts() {
 
   return (
     <section ref={contactsRef} className="contacts">
-      <h1>Contacts</h1>
+      <h2>Contacts</h2>
       {/* social links */}
       <div className="contacts-content">
         {/* Resume a */}

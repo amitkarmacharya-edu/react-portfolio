@@ -1,9 +1,10 @@
 .header {
-  position: relative;
-  z-index: auto;
-  min-width: 280px;
-  background-color: white;
+
   height: 60px;
+  min-width: 280px;
+
+  background-color: white;
+  
   overflow: hidden;
   transition: height .5s ease-in-out;
 }

@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <article className="aboutme">
       {/* page title */}
-      <h1 data-testid="page-title">About Me</h1>
+      <h2 data-testid="page-title">About Me</h2>
       {/* avatar info */}
       <div className="web-author-info-container">
         <div className="avatar-wrapper">

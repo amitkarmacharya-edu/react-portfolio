@@ -2,9 +2,9 @@ footer {
   background-color: whitesmoke;
   box-sizing: border-box;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -74,7 +74,6 @@ footer ul li a:hover {
 
 .footer-links ul {
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .footer-links li a {
@@ -82,6 +81,7 @@ footer ul li a:hover {
 }
 
 footer h5:last-child {
+  width: 100%;
   font-size: 11px;
   color: rgb(80, 80, 80);
   margin-bottom: 0; 

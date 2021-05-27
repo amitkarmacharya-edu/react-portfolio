@@ -1,5 +1,6 @@
 .aboutme {
   height: 100vh;
+  min-height: 568px;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -9,6 +10,10 @@
   align-items: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 3rem;
+}
+
+.aboutme h2 {
+  margin: 2rem auto;
 }
 
 .web-author-info-container {

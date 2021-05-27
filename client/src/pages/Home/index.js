@@ -5,7 +5,7 @@ import Contacts from '../../components/Contacts';
 
 function Home() {
   return (
-    <main>
+    <main className="container">
       <HoneyCombHero />
       <AboutMe />
       <Contacts />
