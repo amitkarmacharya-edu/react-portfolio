@@ -114,21 +114,20 @@
 /** for nav link **/
 @media(min-width: 576px){
   .aboutme {
-    height: 50vh;
+    height: auto;
     flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
-    overflow: start;
   }
 
-  .aboutme h1 {
-    text-align: center;
+  .aboutme h2 {
     width: 100%;
+    text-align: center;
     flex-basis: content;
     order: 1;
   }
 
   .web-author-info-container {
-    flex-basis: auto;
     order: 2;
   }
 

@@ -13,7 +13,7 @@ function AboutMe() {
             <img
               className="web-author-avatar"
               alt="web developer, amit karmacharya"
-              src="./amit.jpg"
+              src="./assets/images/amit.jpg"
             />
           </div>
         </div>
