@@ -156,7 +156,7 @@
   }
 }
 
-@media(min-width: 650px) {
+@media(min-width: 700px) {
   .social-media-item a span {
     display: inline;
     visibility: visible;
