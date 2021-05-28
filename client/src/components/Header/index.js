@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./index.css";
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
       <nav className="nav-bar">
         <ul className="mobile-nav-bar">
           <li className="nav-link-item">
-            <a href="/" className="text-logo">amit karmacharya</a>
+            {/* <a href="/" className="text-logo">amit karmacharya</a> */}
           </li>
           <li className="nav-link-item">
             <div className="menu-btn" onClick={toggleMenuBtn}>
@@ -36,32 +36,32 @@ function Header() {
         <div className="mobile-menu-link">
           <ul className="menu-link">
             <li className="menu-link-item">
-              <a href="/#aboutme">about me</a>
+              <Link to="aboutme" smooth={true} duration={1000}>about me</Link>
             </li>
             <li className="menu-link-item">
-              <a href="/#portfolio">portfolio</a>
+              <Link to="portfolio" smooth={true} duration={1000}>portfolio</Link>
             </li>
             <li className="menu-link-item">
-              <a href="/#contacts">contacts</a>
+              <Link to="contacts" smooth={true} duration={1000}>contacts</Link>
             </li>
           </ul>
         </div>
         <ul className="nav-link">
           <li className="nav-link-item nav-logo">
-            <a href="/" className="text-logo">
+            {/* <a href="/" className="text-logo">
               amit karmacharya
-            </a>
+            </a> */}
           </li>
           <li className="nav-link-item ml-auto">
-            <NavLink className="navLink" to="/#aboutme">
+            <Link className="navLink" to="aboutme" smooth={true} duration={1000}>
               About Me
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-link-item">
-            <NavLink to="/#contacts">Contacts</NavLink>
+            <Link to="contacts" smooth={true} duration={1000}>Contacts</Link>
           </li>
           <li className="nav-link-item">
-            <NavLink to="/#portfolio">Portfolio</NavLink>
+            <Link to="portfolio" smooth={true} duration={1000}>Portfolio</Link>
           </li>
         </ul>
       </nav>

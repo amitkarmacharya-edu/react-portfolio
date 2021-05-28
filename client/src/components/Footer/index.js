@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as Scroll } from "react-scroll";
 import "./index.css";
 
 function Footer() {
@@ -10,16 +11,16 @@ function Footer() {
         </h5>
         <ul>
           <li>
-            <a href="/">home</a>
+            <Link to="/" onClick={() => {Scroll.scrollToTop()}}>home</Link>
           </li>
           <li>
-            <a href="/#about">about</a>
+            <Link to="aboutme" smooth={true} duration={1000}>about</Link>
           </li>
           <li>
-            <a href="/#portfolio">portfolio</a>
+            <Link to="portfolio" smooth={true} duration={1000}>portfolio</Link>
           </li>
           <li>
-            <a href="/#contacts">contacts</a>
+            <Link to="contacts" smooth={true} duration={1000}>contacts</Link>
           </li>
         </ul>
       </section>

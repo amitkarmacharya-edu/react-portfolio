@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding-top: 1rem;
   margin-bottom: 1rem;
+  
 }
 
 .portfolio h2 {
@@ -15,15 +16,18 @@
 }
 
 .portfolio-project {
+  max-width: 1400px;
   min-height: 568px;
-  /* max-height: 640px; */
   margin-bottom: 3rem;
+
   font-weight: 300;
-  font-family: 'Roboto',Georgia, 'Times New Roman', Times, serif;
   letter-spacing: 1px;
+  font-family: 'Roboto',Georgia, 'Times New Roman', Times, serif;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   background-color: rgb(247, 247, 247);
 }
 
@@ -150,4 +154,12 @@
     justify-content: space-between;
   }
 
+}
+
+@media(min-width: 1400px) {
+  .portfolio-project {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

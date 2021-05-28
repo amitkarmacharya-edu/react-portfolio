@@ -1,0 +1,38 @@
+.scroll-to-top {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  opacity: .7;
+  background: transparent;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.scroll-to-top:hover {
+  cursor: pointer;
+}
+
+.scroll-to-top:active {
+  background-color: rgb(192, 192, 192);
+}
+
+.scroll-top-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-top-icon-container svg{
+  height: 50px;
+  width: 50px;
+  color: rgb(117, 117, 117);
+  background-color: rgb(255, 255, 255);
+}
+
+.scroll-top-icon-container svg:active {
+  color: black;
+}

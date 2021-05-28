@@ -1,6 +1,7 @@
 .aboutme {
   height: 100vh;
   min-height: 568px;
+  max-width: 1000px;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -116,7 +117,7 @@
   .aboutme {
     height: auto;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
@@ -128,6 +129,7 @@
   }
 
   .web-author-info-container {
+    align-self: bottom;
     order: 2;
   }
 
@@ -147,7 +149,7 @@
   }
 
   .author-bio {
-    margin-top: 2rem;
+    margin-left: 2rem;
     flex-basis: auto;
     order: 2;
     width: 50%;
